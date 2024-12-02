@@ -1,0 +1,53 @@
+.header {
+    background-color: #005B96;
+    color: white;
+    padding: 20px 0;
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+    
+    
+}
+
+li {
+    margin: 20px;
+    
+    
+}
+
+li a {
+    text-decoration: none;
+    text-transform: none;
+    background-color: #005B96;
+    color: white;
+    padding: 20px 0;
+    
+    
+    
+}
+
+a:hover{
+    
+    font-weight: bold;
+   
+    
+    
+
+    
+}

@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color:steelblue;
+    
+}
+
+h2 {
+    text-align: center;
+    background-color: #005B96;
+    color: white;
+    padding: 20px 0;
+}
+
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px; /
+}
+
+
+.produto {
+    flex: 1 1 calc(25% - 40px); 
+    max-width: 25%; 
+    height: 350px; 
+    box-sizing: border-box;
+    border: 2px solid #007BFF;
+    border-radius: 10px; 
+    padding: 16px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.produto:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.produto img {
+    max-width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+
+.produto h3 {
+    font-size: 1.2em; 
+    font-weight: bold;
+    margin-bottom: 8px; 
+    color: #333; 
+}
+
+
+.produto p {
+    margin: 4px 0; 
+    color: #666; 
+    font-size: 0.9em; 
+}
+
+
+.produto input[type="number"] {
+    width: 60px; 
+    text-align: center; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+
+.indisponivel {
+    font-size: 0.85em;
+    color: red;
+    font-weight: bold;
+}
+
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px; 
+    padding: 20px;
+    border: 2px solid #007BFF; 
+    border-radius: 10px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    width: 100%; 
+    max-width: 400px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+.total-container .total {
+    font-size: 1.5em; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 15px; 
+}
+
+
+.total-container .btn {
+    background-color: #007BFF;
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.total-container .btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .produto {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: 50%;
+        height: auto; 
+    }
+
+    .produto img {
+        height: 120px; 
+    }
+
+    .total-container {
+        max-width: 100%; 
+        padding: 15px;
+    }
+
+    .total-container .btn {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+
+    .produto img {
+        height: 100px; 
+    }
+}
